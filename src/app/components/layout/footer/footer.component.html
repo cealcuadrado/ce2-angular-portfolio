@@ -1,3 +1,8 @@
-<hr/>
-<p>(social)</p>
-<p>&#169; (year) {{username}}</p>
+<p>
+  <a *ngFor="let network of networks" [href]="network.url" target="_blank" [title]="network.name">
+    <i class="fab fa-2x fa-fw" [ngClass]="network.icon"></i>
+  </a>
+</p>
+<p><i class="fas fa-envelope fa-fw"></i> {{email}}</p>
+<p>Nintendo Switch: {{nswCode}}</p>
+<p>&#169; {{currentDate | date:'yyyy'}} {{username}}</p>

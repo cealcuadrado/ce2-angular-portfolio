@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatGridListModule } from "@angular/material/grid-list";
+import { LayoutModule } from "@angular/cdk/layout";
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,7 +21,9 @@ import { FooterComponent } from './components/layout/footer/footer.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatGridListModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
