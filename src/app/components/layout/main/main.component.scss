@@ -1,6 +1,7 @@
 @import "../../../app.component.scss";
 
 mat-grid-tile {
+  background-color: $indigo-pink-color;
   @media screen and (max-width: 991px) {
     &:not(:last-child) {
       border-bottom: 1px solid $indigo-pink-color;
@@ -22,6 +23,7 @@ mat-grid-tile {
       position: absolute;
       top: -250px;
       left: -700px;
+      transition: opacity 0.1s linear;
     }
 
     div {
@@ -31,14 +33,11 @@ mat-grid-tile {
       background-color: $indigo-pink-color;
       padding: 1rem;
       text-align: center;
-      transition: color 0.1s linear;
     }
 
      &:hover {
-      opacity: 0.5;
-
-      div {
-        background-color: darken($indigo-pink-color, 30%);
+      img {
+        opacity: 0.5;
       }
     }
   }

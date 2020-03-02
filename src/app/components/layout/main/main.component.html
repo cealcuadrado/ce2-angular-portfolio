@@ -1,7 +1,7 @@
 <mat-grid-list [cols]="this.cols" [rowHeight]="rowHeight">
   <mat-grid-tile *ngFor="let tile of tiles">
     <a [href]="tile.blog.url" target="_blank">
-       <img [src]="tile.blog.imgUrl" />
+       <img [src]="tile.blog.imgUrl" [alt]="tile.blog.description"/>
        <div>
          <strong>{{tile.blog.name | uppercase}}</strong>
          <br/>
