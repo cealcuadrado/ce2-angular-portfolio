@@ -3,10 +3,10 @@
 p {
   text-align: center;
   color: white;
-  transition: opacity 0.1s linear;
 
   a {
     color: white;
+    transition: opacity 0.1s linear;
 
     &:not(:last-child) {
       margin-right: 0.5rem;
