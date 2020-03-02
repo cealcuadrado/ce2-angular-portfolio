@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BASICDATA } from './constants/basicData';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'CeAlCuadrado Networks';
-  username = 'CeAlCuadrado';
+  title = BASICDATA.title;
+  username = BASICDATA.username;
+  email = BASICDATA.email;
+  nswCode = BASICDATA.nswCode;
 }
