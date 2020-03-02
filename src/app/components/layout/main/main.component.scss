@@ -1,0 +1,45 @@
+@import "../../../app.component.scss";
+
+mat-grid-tile {
+  @media screen and (max-width: 991px) {
+    &:not(:last-child) {
+      border-bottom: 1px solid $indigo-pink-color;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    &:not(:last-child) {
+      border-right: 1px solid $indigo-pink-color;
+    }
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+    transition: opacity 0.1s linear;
+
+    img {
+      position: absolute;
+      top: -250px;
+      left: -700px;
+    }
+
+    div {
+      position: relative;
+      width: 300px;
+      color: white;
+      background-color: $indigo-pink-color;
+      padding: 1rem;
+      text-align: center;
+      transition: color 0.1s linear;
+    }
+
+     &:hover {
+      opacity: 0.5;
+
+      div {
+        background-color: darken($indigo-pink-color, 30%);
+      }
+    }
+  }
+}
