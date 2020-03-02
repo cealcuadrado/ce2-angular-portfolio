@@ -1,4 +1,16 @@
+$indigo-pink-color: #3f51b5;
+
 .container {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+   background-color:  $indigo-pink-color;
+}
+
+app-footer {
+  background-color: steelblue;
 }
